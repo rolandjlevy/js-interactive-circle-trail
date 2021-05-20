@@ -1,0 +1,26 @@
+body {
+  background: #000;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.fade-out {
+  animation: fadeOut 3s ease 0s 1 normal forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+}
