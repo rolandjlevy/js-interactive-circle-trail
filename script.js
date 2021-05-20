@@ -1,11 +1,10 @@
-function touchEnabled() {
-  return 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
-}
-
+const touchEnabled = () => 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+const getCssVar = (prop) => getComputedStyle(document.body).getPropertyValue(prop);
+const size = getCssVar('--size');
+const borderSize = getCssVar('--border-size');
 const moveEvent = touchEnabled() ? 'ontouchmove' : 'onmousemove';
 
 document[moveEvent] = (event) => {
-  const size = 100, borderSize = 10;
   const circle = document.createElement('div');
   circle.setAttribute('class', 'circle');
   document.body.appendChild(circle);

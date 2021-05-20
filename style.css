@@ -1,3 +1,8 @@
+:root {
+  --size: 160;
+  --border-size: 16;
+}
+
 body {
   background: #000;
   overflow: hidden;
@@ -6,16 +11,16 @@ body {
 }
 
 .circle {
-  width: 100px;
-  height: 100px;
+  width: calc(var(--size) * 1px);
+  height: calc(var(--size) * 1px);
   position: absolute;
-  border: 10px solid #ffffff;
+  border: calc(var(--border-size) * 1px) solid #ffffff;
   border-radius: 50%;
   opacity: 0.5;
 }
 
 .fade-out {
-  animation: fadeOut 4s cubic-bezier(0.215, 0.610, 0.355, 1) 0s 1 normal forwards;
+  animation: fadeOut 6s cubic-bezier(0.215, 0.610, 0.355, 1) 0s 1 normal forwards;
 }
 
 @keyframes fadeOut {
