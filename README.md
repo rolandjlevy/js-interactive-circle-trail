@@ -1,6 +1,6 @@
 # Interactive Circle Trail
 
-> Click and drag to see a trail of fading circles. Made with just 10 lines of JavaScript
+> Click and drag to see a trail of fading circles. Made with just 16 lines of JavaScript. Fully responsive and mobile-friendly.
 
 ### Links 🔗
 - [See the demo](https://js-interactive-circle-trail.rolandjlevy.repl.co)
