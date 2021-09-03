@@ -20,7 +20,7 @@ body {
 }
 
 .fade-out {
-  animation: fadeOut 3s cubic-bezier(0.215, 0.610, 0.355, 1) 0s 1 normal forwards;
+  animation: fadeOut 5s cubic-bezier(0.215, 0.610, 0.355, 1) 0s 1 normal forwards;
 }
 
 @keyframes fadeOut {
